@@ -8,7 +8,7 @@
 		<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 		<script type="text/javascript" src="js/slider.js"></script>
 		<script type="text/javascript" src="js/verifrobot.js"></script>
-		<?php	$bdd = mysql_connect('mysql51-110.perso', 'easyelobsql', '2BNG5tqTx6UH'); 
+		<?php	$bdd = mysql_connect('server', 'user', 'pass'); 
 			mysql_select_db('easyelobsql', $bdd); ?>
 		<title>Easy Elo Boost - <?php echo $pagename; ?></title>
 	</head>
