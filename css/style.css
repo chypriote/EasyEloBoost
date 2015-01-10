@@ -1,0 +1,442 @@
+/**  General **/
+body {
+	overflow-y:auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: left;
+	font-family: 'Droid Sans', sans-serif, Helvetica, Arial;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	color: #999999;
+	background-color: #000000;
+}
+#wrapper {
+	display: block;
+	width:70%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow:hidden;	
+}
+hr {
+	border: 0;
+	background-color: #333333;
+	height: 1px;
+	margin:0;
+}
+img {
+	border-style: none;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+	color: #BDBDBD;
+}
+h1{
+	text-align:center;
+	line-height:1.0em;
+	color: #ff011d;
+	font-weight:bold;
+}
+h1 a,
+h1 a:hover{
+	text-decoration:none;
+}
+h2{
+	line-height:1.0em;
+	color: #ff011d;
+	font-size:20px;
+	font-weight:normal;
+}
+h3{
+	line-height:1.0em;
+	color: #ff011d;
+	font-size:19px;
+	font-weight:bold;
+	margin-bottom:1%;
+}
+h4{
+	text-align:center;
+	line-height:1.0em;
+	color: #ff011d;
+	font-weight:bold;
+	font-size:1.7em;
+	margin-bottom:1%;
+}
+p {
+	line-height:1.6em;
+	margin:8px 0;
+}
+a {
+	color: #ff011d;
+	text-decoration: none;
+}
+a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+/** Header **/
+#header {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+#logo {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: bold;
+	font-size: 3.4em;
+	letter-spacing: -0.03em;
+	line-height: 0.9em;
+	padding-top: 4%;
+	display:inline-block;
+}
+#logo a {
+	color: #fff;
+	text-decoration: none;
+}
+#logo a:hover {
+	text-decoration: none;
+	color: #ff011d;
+}
+
+/** Menu **/
+#menu {
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+#menu ul { 
+	padding:0;
+	margin:0;
+	height:100%;
+}
+#menu li {
+	display:inline-block;
+	padding:1% 2%;
+}
+#menu a {
+	display: block;
+	color: #fff;
+}
+#menu li:hover,
+#menu li.active {
+	color: #fff;
+	background-color: #ff011d;
+}
+
+/** Footer **/
+#footer {
+	margin-left: auto;
+	margin-right:auto;
+}
+#copyright {
+	font-size: 0.86em;
+	text-align: center;
+	color: #555555;
+}
+#copyright a {
+	color: #555555;
+	text-decoration: none;
+}
+#copyright a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/** Content **/
+#content {
+	margin-left:auto;
+	margin-right:auto;
+}
+/* Elo boost par victoires */
+#select_boost {
+text-align:center;
+}
+#select_boost .title{
+	margin-bottom:1%;
+	font-weight:bold;
+}
+#select_boost h3{
+	text-align:left;
+	margin-left:30%;
+}
+#select_boost input[type=button]{
+	border:none;
+	font-size:1.5em;
+	background-color:#d10016;
+	color: #fff;
+	border-radius:3px;
+	padding:0 1%;
+}
+#select_boost input[type=button]:hover{
+	background-color:#ff011d;	
+}
+#select_boost input[type=text]{
+width:2%;
+}
+/* Page de login */
+#login_box {
+width:30%;
+text-align:center;
+margin: 0 auto 4%;
+border:1px solid #333;
+}
+/* Page elo boost */
+.boost_bloc{
+display:inline-block;
+width:45%;
+font-weight:bold;
+text-align:center;
+}
+.boost_bloc h2{
+	text-align:center;
+	margin-bottom:3%;
+}
+.boost_bloc table{
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+}
+.boost_bloc input[type=text]{
+	width:30%;
+}
+#boost_prix {
+float:center;
+margin-left:auto;
+margin-right:auto;
+width:30%;
+margin-top:-3%;
+padding-left:5%;
+}
+#boost_prix input[type=button]:hover{
+	background-color:#ff011d;	
+}
+#boost_prix img{
+margin-left:5%;
+}
+/* Page de commande */
+.order_left{
+display:inline-block;
+width:45%;
+font-weight:bold;
+vertical-align:top;
+}
+.order_right{
+display:inline-block;
+width:48%;
+color:#ff011d;
+font-weight:bold;
+}
+.order_right input[type=text]{
+display:inline-block;
+margin-bottom:5%;
+color:#ff011d;
+font-weight:bold;
+width:100%;
+}
+.order_right input[type=password]{
+display:inline-block;
+margin-bottom:5%;
+width:100%;
+}
+#hidden .order_right select{
+margin-bottom:5%;
+width:49%;
+}
+#infos h2{
+text-align:center;
+}
+#formulaire h2{
+text-align:center;
+}
+#formulaire textarea{
+width: 94%;
+margin-top:1%;
+color:#ff011d;
+font-weight:bold;
+border-radius:5px;
+border:0;
+}
+#formulaire {
+display:inline-block;
+width:45%;
+border:1px solid #333;
+padding:1%;
+vertical-align:top;
+}
+#infos {
+display:inline-block;
+width:45%;
+border:1px solid #333;
+padding:1%;
+vertical-align:top
+}
+
+/** Tableaux Boosting/Victories **/
+#tableaux {
+	width:100%;
+	text-align:center;
+}
+.div_boost{
+	display:inline-block;
+	width:45%;
+	margin: 2%;
+}
+.tab_boost {
+	width:100%;
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+	border: 1px solid #333;	
+}
+.tab_boost th {
+	width:50%;
+	border:0;
+}
+.tab_boost td {
+	border: 1px solid #333;
+	border-left:0;
+	vertical-align: middle;
+	font-weight: bold;
+	padding:2%;
+}
+.tab_victory {
+	width:100%;
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+	border: 1px solid #333;	
+}
+.tab_victory th {
+	width:50%;
+	border:0;
+}
+.tab_victory td {
+	border: 1px solid #333;
+	border-left:0;
+	vertical-align: middle;
+	font-weight: bold;
+	padding:3%;
+}
+.tab_coaching {
+	width:100%;
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+	border: 1px solid #333;	
+}
+.tab_coaching th{
+	width:25%;
+	border:0;
+}
+.tab_coaching td{
+	border: 1px solid #333;
+	border-left:0;
+	vertical-align: middle;
+	font-weight: bold;
+	padding:3%;
+}
+.tab_duoq {
+	width:100%;
+	padding:0;
+	margin:0;
+	border-collapse:collapse;
+	border: 1px solid #333;	
+}
+.tab_duoq th{
+	width:50%;
+	border:0;
+}
+.tab_duoq td{
+	border: 1px solid #333;
+	border-left:0;
+	vertical-align: middle;
+	font-weight: bold;
+	padding:3%;
+}
+.tab_placement{
+	border:1px solid #333;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3%;
+}
+.tab_placement td{
+	vertical-align:middle;
+	text-align:center;
+	padding:0;
+}
+.tab_placement th{
+	vertical-align:middle;
+	padding-left:3%;
+}
+.tab_placement img{
+	width:25%;
+	margin-right:5%;
+	vertical-align:middle;
+}
+.tab_placement .title {
+	width:100%;
+	border-bottom:1px solid #333;
+	color:#ff011d;
+	font-weight:bold;
+}
+
+/** Formulaire de contact **/
+#form_contact {
+display:inline-block;
+width:40%;
+padding:2% 2% 0;
+border:1px solid #333;
+vertical-align:top;
+margin-left:2%;
+}
+#form_contact h2{
+	margin-top:1%;
+	text-align:center;
+}
+#form_contact input[type=text]{
+	margin-top:1%;
+	margin-bottom:2%;
+	width:85%;
+	margin-left:5%;
+}
+#form_contact textarea{
+	width:85%;
+	margin-bottom:2%;	
+	height:20%;
+	margin-top:1%;
+	margin-left:5%;
+}
+#form_contact input[type=submit] {
+	background-color:#ff011d;
+	color: #fff;
+	margin-top:3%;
+	margin-left:70%;
+}
+#right_contact {
+	padding:2%;
+	border:1px solid #333;
+	display:inline-block;
+	width: 40%;
+	margin-left:7%;
+	margin-right:2%;
+}
+#myaddress {
+width:95%;
+margin-left:5%;
+}
+#myaddress input[type=text]{
+	width:60%;
+	margin-left:2%;
+}
+#error_frame {
+	color:#1d01ff;
+	text-align:center;
+	font-size: large;
+	margin-bottom:3%;
+}
