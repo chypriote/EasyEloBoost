@@ -2,20 +2,19 @@
 		if (strtolower($page) == strtolower($pagename)) {echo " class=\"active\"";}
 		return;
 	}
-?>
-<?php	function	verif_robot($check) {
+function	verif_robot($check) {
 			if ($check == 50) {return true;}
 			return false;
-		}
-?>
-<?php	function	get_type($type) {
+}
+
+function	get_type($type) {
 			if ($type == 'boost') {return "Elo boost";}
 			if ($type == 'wins') {return "Victoires";}
 			if ($type == 'placement') {return "Matchs de placement";}
 		return false;
 }
-?>
-<?php	function	get_league($league, $division) {
+
+function	get_league($league, $division) {
 		$str = "";
 			if ($league == "bronz") {$str.= "Bronze";}
 			else if ($league =="silv") {$str.= "Argent";}
@@ -29,4 +28,3 @@
 			else if ($division == 5) {$str.= " V";}
 		return $str;
 }
-?>

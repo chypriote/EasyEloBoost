@@ -8,8 +8,8 @@
 		<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 		<script type="text/javascript" src="js/slider.js"></script>
 		<script type="text/javascript" src="js/verifrobot.js"></script>
-		<?php	$bdd = mysql_connect('server', 'user', 'pass'); 
-			mysql_select_db('easyelobsql', $bdd); ?>
+		<?php	$bdd = mysqli_connect('localhost', 'seriouslee-data', 'azerty1234');
+			mysqli_select_db($bdd, 'seriouslee'); ?>
 		<title>Easy Elo Boost - <?php echo $pagename; ?></title>
 	</head>
 <body>
@@ -19,7 +19,7 @@
 			<a href="index.php"><img src="images/logo.png"  alt="Easy Elo Boost" /></a>
 		<hr />
 		</div>
-		<div id="menu">	
+		<div id="menu">
 			<ul>
 				<li<?php link_isactive('accueil', $pagename); ?>><a href="index.php" >Accueil</a></li>
 				<li<?php link_isactive('boosts', $pagename); ?>><a href="boosting.php">ELO BOOSTS</a></li>
